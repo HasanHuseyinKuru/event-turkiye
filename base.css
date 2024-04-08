@@ -1,0 +1,139 @@
+/*! base start */
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  line-height: 40px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0 25px;
+  border: 1px solid #000;
+  font-weight: 500;
+  border: 1px solid #000;
+  transition: 0.2s ease all;
+}
+
+.btn-sm {
+  line-height: 33px;
+}
+
+.btn-lg {
+  line-height: 45px;
+}
+
+.btn-primary {
+  background-color: #ccccff;
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background-color: #ffffff;
+  color: #ccccff;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"] {
+  outline: none;
+  border: 1px solid #ccccff;
+  padding: 8px 8px 8px 15px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="e-mail"]:focus,
+input[type="number"]:focus {
+  border-color: #dee0ea;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+  opacity: 1;
+}
+
+.img-fluid {
+  width: 100%;
+}
+
+/*! base end */
+
+/*! responsive */
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 992px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 576px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 400px) {
+  .container {
+    max-width: 350px;
+  }
+}
